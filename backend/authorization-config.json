@@ -1,0 +1,108 @@
+{
+    "__version": 2,
+    "wix-data": {
+        "!default": {
+            "siteOwner": {
+                "insert": true,
+                "update": true,
+                "remove": true,
+                "read": true
+            },
+            "siteMember": {
+                "insert": false,
+                "update": false,
+                "remove": false,
+                "read": false
+            },
+            "anonymous": {
+                "insert": false,
+                "update": false,
+                "remove": false,
+                "read": false
+            },
+            "dataOwner": {
+                "update": false,
+                "remove": false,
+                "read": true
+            }
+        },
+        "hello": {
+            "anonymous": {
+                "insert": false,
+                "update": false,
+                "remove": false,
+                "read": true
+            },
+            "siteMember": {
+                "insert": false,
+                "update": false,
+                "remove": false,
+                "read": true
+            },
+            "dataOwner": {
+                "update": false,
+                "remove": false,
+                "read": true
+            },
+            "siteOwner": {
+                "insert": true,
+                "update": true,
+                "remove": true,
+                "read": true
+            }
+        },
+        "richText": {
+            "anonymous": {
+                "insert": false,
+                "update": false,
+                "remove": false,
+                "read": true
+            },
+            "siteMember": {
+                "insert": false,
+                "update": false,
+                "remove": false,
+                "read": true
+            },
+            "dataOwner": {
+                "update": false,
+                "remove": false,
+                "read": true
+            },
+            "siteOwner": {
+                "insert": true,
+                "update": true,
+                "remove": true,
+                "read": true
+            }
+        }
+    },
+    "web-methods": {
+        "*": {
+            "*": {
+                "siteOwner": {
+                    "invoke": true
+                },
+                "siteMember": {
+                    "invoke": true
+                },
+                "anonymous": {
+                    "invoke": true
+                }
+            }
+        },
+        "wix/data-web.jsw": {
+            "*": {
+                "siteOwner": {
+                    "invoke": true
+                },
+                "siteMember": {
+                    "invoke": true
+                },
+                "anonymous": {
+                    "invoke": true
+                }
+            }
+        }
+    }
+}
